@@ -1,0 +1,102 @@
+body, html {
+  /* important */
+  overflow: hidden; }
+
+/*---------header------------*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: green;
+  z-index: 10;
+  opacity: 0; }
+
+#logo {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  z-index: 10; }
+  #logo img {
+    width: 10vh;
+    height: auto; }
+
+.arrow {
+  text-align: center;
+  margin-top: 80vh;
+  transform: rotate(90deg); }
+
+/*---------parallax------------*/
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px; }
+
+.parallax_group {
+  position: relative;
+  height: 100vh; }
+
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.parallax_base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4; }
+
+.parallax_back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3; }
+
+#group1 {
+  z-index: 5; }
+
+#group1 .parallax_base {
+  height: 100vh;
+  width: auto;
+  background: url("../images/IMG_0568.jpg");
+  min-height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+#group2 {
+  z-index: 3; }
+
+#group2 .parallax_back {
+  background: url("../images/background3.png");
+  height: 100vh;
+  width: 100%;
+  min-height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+/*------------- description info-----------------------*/
+h1 {
+  color: #ffffff;
+  text-align: right;
+  font-size: 9em;
+  margin-top: 10vh;
+  margin-right: 5vh; }
+
+#descrip {
+  padding-left: 40%;
+  padding-right: 5vh;
+  padding-top: 1%; }
+
+p {
+  color: lightgray;
+  font-size: 2em;
+  line-height: 1.5em;
+  text-align: right; }
+
+/*# sourceMappingURL=style.css.map */
